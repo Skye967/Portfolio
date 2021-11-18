@@ -9,8 +9,8 @@ import GLogo from "./images/github.png";
 
 function App() {
   return (
-  <html>
-    <div id="body">
+  <html id="body">
+    <div className="body">
       <div className="navbar">
         <div className="name">
           <img src={sgLogo} height="150" width="auto" alt="Skye's logo" />
