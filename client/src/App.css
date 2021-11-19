@@ -243,6 +243,7 @@ html {
   align-items: flex-start;
   padding: 50px 50px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project_info {
