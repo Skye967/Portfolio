@@ -7,7 +7,7 @@ app.use( express.urlencoded( {
     extended: true
 } ) );
 
-require( './routes/exam.routes' )( app );
+require( './routes/portfolio.routes' )( app );
 
 app.listen( port, () => {
     console.log( "Listening at Port 8000" );
