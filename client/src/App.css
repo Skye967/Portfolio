@@ -23,9 +23,6 @@ html {
   scroll-behavior: smooth;
 }
 
-*{
-  border: 1px solid red;
-}
 
 #body{
   scroll-behavior: smooth;
@@ -81,7 +78,7 @@ html {
 
 
 .intro {
-  width: 117%;
+  width: 105%;
   height: 600px;
   background-image: url(./images/jungle.jpg);
   background-repeat: no-repeat;
