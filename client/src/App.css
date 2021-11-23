@@ -78,7 +78,7 @@ html {
 
 
 .intro {
-  width: 105%;
+  width: 118%;
   height: 600px;
   background-image: url(./images/jungle.jpg);
   background-repeat: no-repeat;
@@ -124,7 +124,7 @@ html {
 }
 
 .bio{
-  width: 105%;
+  width: 118%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -208,7 +208,7 @@ html {
 
 
 .projects{
-  width: 105%;
+  width: 118%;
   padding: 200px 0px;
   display: flex;
   flex-direction: column;
