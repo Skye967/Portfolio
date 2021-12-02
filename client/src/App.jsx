@@ -1,4 +1,3 @@
-
 import './App.css';
 import selfie from "./images/selfie.png";
 import bioImage from "./images/bio.JPG";
@@ -6,12 +5,11 @@ import sgLogo from "./images/sg.png";
 import ELogo from "./images/email.png";
 import LLogo from "./images/linkedin.png";
 import GLogo from "./images/github.png";
-
 function App() {
   return (
-  <html id="body">
-    <div className="body">
-      <div className="navbar">
+    <html>
+    <div id="body">
+      <nav className="navbar">
         <div className="name">
           <img src={sgLogo} height="150" width="auto" alt="Skye's logo" />
           <h2>Skye Grossman</h2>
@@ -22,7 +20,7 @@ function App() {
             <a href="https://docs.google.com/document/d/1yiERknxvQLEHC88zE83m0mrzPH7XdRkdJhFOFz-iW2g/edit?usp=sharing">Resume</a>
             <a href="#contact">Contact</a>
         </div>
-      </div>
+      </nav>
         <div className="intro">
           <div className="intro_header">
             
@@ -40,7 +38,7 @@ function App() {
           </div>
           <div className="bio_body" >
             <div className="bio_content">
-              <h4>  Critcal Thinker, Mythotical, Idealist, and Jack of All Trades. <span>Whatever Skye does, he does with heart and integrity.</span> Native of Hawaii growing up in a remote area of Maui, he had to work hard and earn everthing he has, learn trade skills out of necessity, <span>his vast skill set, experience, and work ethic make him an asset</span> to anyone he works with. After much thought and deliberation about the future, Skye decided to try his hand at coding knowing it was unlike anything that he had done before. He practiced coding every chance he got, learning something new everyday made him hunger for more. Finally after months of practice, he was ready to make a career change. He <span>signed up with Coding Dojo</span> one the most prestigious coding bootcamps in the United States. Consistantly a top performer and always helping out where he could, made the most of his time there. Now he is ready for his first programming venture.
+              <h4>  Critcal Thinker, Mythotical, Idealist, and Jack of All Trades. <span>Whatever Skye does, he does with heart and integrity.</span> Native of Hawaii growing up in a remote area of Maui, he had to work hard and earn everthing he has. Growing up in a rural area he had to learn trade skills out of necessity, <span>his vast skill set, experience, and work ethic make him an asset</span> to anyone he works with. After much thought and deliberation about the future, Skye decided to try his hand at coding knowing it was unlike anything that he had done before. He practiced coding every chance he got, learning something new everyday made him hunger for more. Finally after months of practice, he was ready to make a career change. He <span>signed up with Coding Dojo</span> one the most pristigious coding bootcamps in the United States. Consistantly a top performer and always helping out where he could, made the most of his time there. Now he is ready for his first programming venture.
               </h4>
             </div>
             <div className="bio_image">
@@ -48,11 +46,10 @@ function App() {
             </div>
           </div>
         </div>
-        <div  id="projects" className="projects">
-          <div  className="projects_section">
-            <h1>Projects</h1>
-          </div>
-          <div className="code">
+        <div id="projects" className="code">
+            <div   className="projects_section">
+              <h1>Projects</h1>
+            </div>
             <h2>I enjoy working with</h2>
             <div className="code_content">
               <div><p>Python</p><p>Java</p><p>HTML</p><p>CSS</p><p>Javascript</p><p>Flask</p><p>Spring</p><p>Node.js</p><p>React.js</p></div>
@@ -62,7 +59,8 @@ function App() {
               <div></div>
             </div>
           </div>
-          <div className="project">
+        <div   className="projects">
+          <div className="project1">
             <div className="project_header">
               <h2>Learn Cooking Essentials</h2>
             </div>
@@ -82,7 +80,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="project">
+          <div className="project2">
             <div className="project_header">
               <h2>Professional Advice</h2>
             </div>
@@ -105,7 +103,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="project">
+          <div className="project3">
             <div className="project_header">
               <h2>Mario Clone</h2>
             </div>
@@ -126,13 +124,15 @@ function App() {
               </div>
             </div>
           </div>
-          <div id="contact" className="contact">
+          
+        </div>
+        <div id="contact" className="contact">
             <div className="contact_header">
               <h2>Let's work together!</h2>
             </div>
             <div className="contact_body">
               <div className="contact_content">
-                <p>If you would like to talk to me about some potential work, some of the projects I have done, or my experience in developing. Simply drop me a message, I'm currently available for work, looking to start my first programming venture.</p>
+                <p>If you would like to speak to me about some potential work, some of the projects I have done, or my experience in developing. Simply drop me a message, I'm currently available for work, looking to start my first programming venture.</p>
               </div>
               <div className="contact_form">
                 <address>
@@ -143,8 +143,8 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
       </div>
+       <script type="application/javascript" src="./scroller.js"></script>
   </html>
   );
 }
