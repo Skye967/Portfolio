@@ -115,6 +115,8 @@ background-color: transparent;
 }
 
 .intro {
+  padding: 250px 100px;
+  width: 100vw;
   background-image: url(./images/jungle.jpg);
   position: relative;
   display: -webkit-box;
@@ -122,8 +124,6 @@ background-color: transparent;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  height: 100vh;
-  margin-top: -20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -298,6 +298,7 @@ background-color: transparent;
 
 .code{
   padding: 100px;
+  width: 100vw;
   background-image: url(./Backdrops/pawel-czerwinski-JgWp9DNib3k-unsplash.jpg);
   position: relative;
   display: -webkit-box;
@@ -305,8 +306,6 @@ background-color: transparent;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  height: 100vh;
-  margin-top: -20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -376,7 +375,7 @@ background-color: transparent;
   color: rgb(3, 3, 1);
   background-image: url("./images/WatskyBackDrop.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;;
 }
 
 .project_header h1{
@@ -388,6 +387,7 @@ background-color: transparent;
 .projects {
   width: 100%;
   padding: 5% 4%;
+  padding-bottom: 20%;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -586,6 +586,7 @@ background-color: transparent;
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-bottom: 100px;
 }
 
 .contact_content{

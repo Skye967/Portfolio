@@ -29,22 +29,19 @@ export const bioScroller = window.addEventListener( 'scroll', function () {
 export const projectScroller = window.addEventListener( 'scroll', function() {
     const projectScroll = document.querySelector( '.projects' );
     let value3 = window.scrollY;
-    if ( value3 < 2200 ) {
-        let num1 = 2200 - value3;
-        let opaNum2 = ( value3 - 1900 ) / 300;
-        projectScroll.style.transform = "translate3d(0, " + num1 + "px, 0)";
+    if ( value3 < 2100 ) {
+        let opaNum2 = ( value3 - 1700 ) / 400;
         projectScroll.style.opacity = opaNum2;
-    } else if ( value3 > 2000 ) {
-        projectScroll.style.transform = "translate3d(0, 0, 0)";
+    } else if ( value3 > 2100 ) {
         projectScroll.style.opacity = 1;
     }
 } );
 
-const modal = document.getElementById( "myModal" );
+// const modal = document.getElementById( "myModal" );
 
-const btn = document.getElementById( "myBtn" );
+// const btn = document.getElementById( "myBtn" );
 
-const span = document.getElementsByClassName( "close" )[ 0 ];
+// const span = document.getElementsByClassName( "close" )[ 0 ];
 
 
 export const descriptionOpen1 = function () {
