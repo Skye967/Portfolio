@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f329981f.chunk.css",
+    "main.js": "/static/js/main.1e2a4647.chunk.js",
+    "main.js.map": "/static/js/main.1e2a4647.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fd1b8c55.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fd1b8c55.js.map",
+    "static/js/2.a5e9c2b1.chunk.js": "/static/js/2.a5e9c2b1.chunk.js",
+    "static/js/2.a5e9c2b1.chunk.js.map": "/static/js/2.a5e9c2b1.chunk.js.map",
+    "static/js/3.39d0f3e2.chunk.js": "/static/js/3.39d0f3e2.chunk.js",
+    "static/js/3.39d0f3e2.chunk.js.map": "/static/js/3.39d0f3e2.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.f329981f.chunk.css.map": "/static/css/main.f329981f.chunk.css.map",
+    "static/js/2.a5e9c2b1.chunk.js.LICENSE.txt": "/static/js/2.a5e9c2b1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/pawel-czerwinski-JgWp9DNib3k-unsplash.7450069f.jpg",
+    "static/media/bio.2148a478.JPG": "/static/media/bio.2148a478.JPG",
+    "static/media/dashboardPage.b2b74a38.png": "/static/media/dashboardPage.b2b74a38.png",
+    "static/media/email.09e30a42.png": "/static/media/email.09e30a42.png",
+    "static/media/github.2ac36c18.png": "/static/media/github.2ac36c18.png",
+    "static/media/githubGreyLogo.aabf6c82.png": "/static/media/githubGreyLogo.aabf6c82.png",
+    "static/media/linkedin.759c5a3e.png": "/static/media/linkedin.759c5a3e.png",
+    "static/media/mario.5e2c38f8.png": "/static/media/mario.5e2c38f8.png",
+    "static/media/qustionAnswer.f34d1b8f.png": "/static/media/qustionAnswer.f34d1b8f.png",
+    "static/media/selfie.abeb387c.png": "/static/media/selfie.abeb387c.png",
+    "static/media/threeDot.08fefa87.png": "/static/media/threeDot.08fefa87.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd1b8c55.js",
+    "static/js/2.a5e9c2b1.chunk.js",
+    "static/css/main.f329981f.chunk.css",
+    "static/js/main.1e2a4647.chunk.js"
+  ]
+}
