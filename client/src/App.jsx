@@ -9,14 +9,17 @@ import ThreeDot from "./images/threeDot.png";
 import LearnToCook from "./images/dashboardPage.png";
 import ProVice from "./images/qustionAnswer.png";
 import Mario from "./images/mario.png";
-import {scroller, bioScroller, projectScroller, descriptionClose1, descriptionOpen1, descriptionClose2, descriptionOpen2, descriptionClose3, descriptionOpen3} from "./js/introScroller";
+import menu from "./images/blackMenu.png";
+import { scroller, bioScroller, projectScroller, descriptionClose1, descriptionOpen1, descriptionClose2, descriptionOpen2, descriptionClose3, descriptionOpen3, projectDisplay, menuOpenClose } from "./js/introScroller";
+
+
 function App() {
   return (
     <html>
       <head>
         
       </head>
-    <div id="body">
+    <div id="body" >
       <nav className="navbar">
         <div className="navbar_block">
             <div className="links">
@@ -40,6 +43,7 @@ function App() {
       </nav>
         <div className="intro" id="intro">
           <div className="intro_body">
+            <a className='menu_button' onClick={menuOpenClose}><img src={menu} width="40px" height="40px"></img></a>
             <img className="introImage" src={ selfie } alt="Skye's selfie" style={ { transform: "translate3d(0,0,0)"} }/>
             <div className="intro_content">
               <h2>Full stack web developer with experience in Javascript, Python, Java, HTML, CSS, SQL, MongoDB, Flask, STS, and React. </h2>
@@ -51,7 +55,7 @@ function App() {
             <h1>About</h1>
           </div>
           <div className="bio_body" id="bio">
-              <h4 className="bio_content">  Critcal Thinker, Methodical, Idealist, and Jack of All Trades. <span>Whatever Skye does, he does with heart and integrity.</span> Native of Hawaii growing up in a remote area of Maui, he had to work hard and earn everthing he has. As a child from a rural area he had to learn trade skills out of necessity. <span> His vast skill set, experience, and work ethic make him an asset</span> to anyone he works with. After much thought and deliberation about the future, Skye decided to try his hand at coding knowing it was unlike anything that he had done before. He practiced coding every chance he got.  Learning something new everyday made him hunger for more. Finally after months of practice, he was ready to make a career change. He <span>signed up with Coding Dojo</span>, one the most pristigious coding bootcamps in the United States. Consistantly a top performer and always helping out where he could, he made the most of his time there. Now he is ready for his first programming venture!
+              <h4 className="bio_content">  Critical thinker, methodical, idealist, and jack of all trades. <span>Whatever I do, I do with heart and integrity.</span> Native of Hawaii growing up in a remote area of Maui, I had to work hard and earn everything I have. As a child from a rural area I had to learn trade skills out of necessity. <span> My vast skill set, experience, and work ethic make me an asset</span> to anyone I work with. After much thought and deliberation about the future, I decided to try my hand at coding knowing it was unlike anything that I had done before. I practiced coding every chance I got.  Learning something new everyday made me hunger for more. Finally after months of practice, I was ready to make a career change. I <span>signed up with Coding Dojo</span>, one the most prestigious coding bootcamps in the United States. Consistently a top performer and always helping out where he could, I made the most of his time there. Now I'm ready for my first programming venture!
             </h4>
             <div className="bio_image">
               <img  src={ bioImage } alt="Skye walking towards a waterfall." />
@@ -63,16 +67,16 @@ function App() {
               <h1>Technologies</h1>
             </div>
             <div className="code_content">
-              <div><p>Python</p><p>Java</p><p>HTML</p><p>CSS</p><p>Javascript</p><p>Flask</p><p>Spring</p><p>Node.js</p><p>React.js</p></div>
-              <div><p>Express.js</p><p>Bootstrap</p><p>AWS</p><p>Mongoose</p><p>MongoDB</p><p>MySQL</p><p>AJAX</p><p>Maven</p></div>
-              <div><p>jQuery</p><p>Angular</p><p>Mongoose.js</p><p>Axios</p><p>MySQL</p><p>MongoDB</p></div>
-              <div><p>Postman</p><p>VScode</p><p>SpringToolSuite</p><p>MySQLWorkbench</p></div>
+              <p>Python</p><p>Java</p><p>HTML</p><p>CSS</p><p>Javascript</p><p>Flask</p><p>Spring</p><p>Node.js</p><p>React.js</p>
+              <p>Express.js</p><p>Bootstrap</p><p>AWS</p><p>Mongoose</p><p>MongoDB</p><p>MySQL</p><p>AJAX</p><p>Maven</p>
+              <p>jQuery</p><p>Angular</p><p>Mongoose.js</p><p>Axios</p><p>MySQL</p><p>MongoDB</p>
+              <p>Postman</p><p>VScode</p><p>SpringToolSuite</p><p>MySQLWorkbench</p>
             </div>
         </div>
         <div className='project_header'>
           <h1 id="projects">Projects</h1>
         <div className="projects">
-          <div className='project'>
+          <div className='project' id='project1'>
             <div className='project_box'>
               <img className='project_img' src={LearnToCook}/>
               <h4>Learn Cooking Essentials</h4>
@@ -96,7 +100,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='project'>
+          <div className='project' id='project2'>
             <div className='project_box'>
               <img className='project_img' src={ProVice}/>
               <h4>Professional Advice</h4>
@@ -119,7 +123,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='project'>
+          <div className='project' id='project3'>
             <div className='project_box'>
               <img className='project_img'  src={Mario}/>
               <h4>Mario Clone</h4>
@@ -161,8 +165,7 @@ function App() {
           </div>
       </div>
       
-  </html>
+    </html>
   );
 }
-
 export default App;

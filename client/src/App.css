@@ -18,14 +18,6 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  
-}
-
-@media only screen and (-height: 300px) {
-  
-}
-
 *{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -34,15 +26,12 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
 } 
 
 #body {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
-
-
 
 .navbar {
   position: fixed;
@@ -124,93 +113,63 @@ background-color: transparent;
 }
 
 .intro {
-  padding: 250px 100px;
   background-image: url(./images/jungle.jpg);
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  width: 100%;
   display: flex;
   overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   background-position: 0px 0px;
-  background-size:100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .intro_body{
-  will-change: transform;
-  justify-content: center;
-  transform: translate3d() scale3d() rotateX() rotateY() rotateZ() skew();
-  transform-style: preserve-3d;
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  width: 100%;
+  height: 100%;
   display: flex;
-  overflow: hidden;
-  margin-bottom: auto;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
+  flex-wrap: wrap-reverse;
   justify-content: center;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .introImage{
-  opacity: 1;
-  position: static;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
-  height: 60vh;
-  max-width: 100%;
-  vertical-align: middle;
-  display: inline-block;
-  
+  max-height: 400px;
+  will-change: transform;
 }
 
 .intro_content{
-  width: 40%;
+  max-width: 600px;
   min-width: 300px;
-  margin: 5%;
-  margin-bottom: 5%;
+  margin: 20px;
+  text-align: center;
 }
 
 .intro_content h2{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight:bolder;
   font-size: 32px;
-  color:rgb(252, 255, 164);
+  color:whitesmoke;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
+}
+
+.menu_button {
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  margin: 1%;
+  background-color: transparent;
+  cursor: pointer;
+
 }
 
 .bio{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap-reverse;
   padding: 20% 0px;
   background-color:black;
 }
@@ -224,7 +183,7 @@ background-color: transparent;
 }
 
 .bio_body{
-  padding-left: 100px;
+  padding: 10%;
   transform-style: preserve-3d;
   left: 0%;
   top: 0%;
@@ -234,6 +193,7 @@ background-color: transparent;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap-reverse;
   width: auto;
   min-height: auto;
   min-width: 90vw;
@@ -256,10 +216,9 @@ background-color: transparent;
 
 
 .bio_content{
-  min-width: 30%;
-  margin-right: 10%;
-  margin-left: 5%;
-  margin-top: 5%;
+  
+  max-width: 400px;
+  margin: 5%;
   color: rgb(236, 235, 235);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: larger;
@@ -292,9 +251,8 @@ background-color: transparent;
 }
 
 .bio_image{
-  margin-right: 10%;
-  min-width: 30%;
-  max-width: 50%;
+  max-width: 300px;
+  margin: 5%;
 }
 
 .bio_image img{
@@ -340,7 +298,7 @@ background-color: transparent;
 
 
 
-.code p{
+.code_content p{
   text-align: center;
   padding: 10px;
   margin: 10px 10px;
@@ -352,19 +310,15 @@ background-color: transparent;
 
 
 .code_content{
-  width: 95%;
+  max-width: 900px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  flex-direction: column;
 }
 
-.code_content div{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
+
 
 .projects_section{
   color: rgb(245, 245, 245);
@@ -393,10 +347,11 @@ background-color: transparent;
 
 .projects {
   width: 100%;
-  padding: 5% 4%;
+  padding: 5% 10%;
   padding-bottom: 20%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   will-change: opacity,
   transform;
@@ -408,30 +363,17 @@ background-color: transparent;
   border: 1px solid rgba(161, 161, 161, 0.486);
   background-color: whitesmoke;
   border-radius: 5%;
-  max-height: 25%;
-  max-width: 25%;
-  margin: 1%;
+  height: 400px;
+  width: 300px;
+  margin: 3%;
   transform-style: preserve-3d;
   left: 0%;
   top: 0%;
   right: auto;
   bottom: 0%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   -webkit-transition: -webkit-box-shadow .25s;
@@ -587,6 +529,7 @@ background-color: transparent;
   color: whitesmoke;
   font-size: xx-large;
   font-family: fantasy;
+  text-align: center;
 }
 
 .contact_body{
@@ -594,12 +537,13 @@ background-color: transparent;
   justify-content: center;
   width: 100%;
   padding-bottom: 100px;
+  padding: 5%;
 }
 
 .contact_content{
   margin: 20px;
-  max-width: 600px;
-  min-width: 200px;
+  max-width:40%;
+  min-width: 50%;
   font-size: larger;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgb(248, 222, 73);
