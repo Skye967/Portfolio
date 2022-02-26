@@ -170,6 +170,9 @@ export const menuOpenClose = function () {
             navbar.style.display = "none";
             navDisplay = false;
             break;
+        
+        default:
+            
     }
 };
 

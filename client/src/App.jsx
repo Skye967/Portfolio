@@ -10,7 +10,8 @@ import LearnToCook from "./images/dashboardPage.png";
 import ProVice from "./images/qustionAnswer.png";
 import Mario from "./images/mario.png";
 import menu from "./images/blackMenu.png";
-import { scroller, bioScroller, projectScroller, descriptionClose1, descriptionOpen1, descriptionClose2, descriptionOpen2, descriptionClose3, descriptionOpen3, projectDisplay, menuOpenClose } from "./js/introScroller";
+import safariIcon from "./images/safariIcon.png";
+import { descriptionClose1, descriptionOpen1, descriptionClose2, descriptionOpen2, descriptionClose3, descriptionOpen3, menuOpenClose } from "./js/introScroller";
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
       </nav>
         <div className="intro" id="intro">
           <div className="intro_body">
-            <a className='menu_button' onClick={menuOpenClose}><img src={menu} width="40px" height="40px"></img></a>
+            <button className='menu_button' onClick={menuOpenClose}><img alt="none" src={menu} width="40px" height="40px"></img></button>
             <img className="introImage" src={ selfie } alt="Skye's selfie" style={ { transform: "translate3d(0,0,0)"} }/>
             <div className="intro_content">
               <h2>Full stack web developer with experience in Javascript, Python, Java, HTML, CSS, SQL, MongoDB, Flask, STS, and React. </h2>
@@ -78,11 +79,15 @@ function App() {
         <div className="projects">
           <div className='project' id='project1'>
             <div className='project_box'>
-              <img className='project_img' src={LearnToCook}/>
+              <img className='project_img' alt="none" src={LearnToCook}/>
               <h4>Learn Cooking Essentials</h4>
               <div className='project_links' >
-                <a className='project_a' href="https://github.com/Skye967/Projects/tree/branching/CookingProject"><img className='projectLinks_img' src={GrayGit} /></a>
-                  <a onClick={descriptionOpen1} id='myBtn' className='project_a'><img className='projectLinks_img' src={ ThreeDot } /></a>
+
+                <a className='project_a' href="https://github.com/Skye967/Projects/tree/branching/CookingProject"><img style={ { width: "40%"} } alt="none" className='projectLinks_img' src={GrayGit} /></a>
+
+                  <button onClick={descriptionOpen1} id='myBtn' className='project_a'><img alt="none" style={ { width: "40%"} } className='projectLinks_img' src={ ThreeDot } /></button>
+
+                  <a className='project_a' href="http://13.58.255.104"><img alt="none" style={ { width: "40%"} } className='projectLinks_img' src={safariIcon} /></a>
                   
                 <div id="myModal1" class="modal">
                   <div class="modal-content">
@@ -102,11 +107,11 @@ function App() {
           </div>
           <div className='project' id='project2'>
             <div className='project_box'>
-              <img className='project_img' src={ProVice}/>
+              <img className='project_img' alt="none" src={ProVice}/>
               <h4>Professional Advice</h4>
               <div className='project_links'>
-                <a className='project_a' href="https://github.com/Skye967/Projects/tree/branching/ProAdviceProject"><img className='projectLinks_img' src={GrayGit}  /></a>
-                  <a onClick={descriptionOpen2} id='myBtn' className='project_a'><img className='projectLinks_img' src={ ThreeDot } /></a>
+                <a className='project_a' href="https://github.com/Skye967/Projects/tree/branching/ProAdviceProject"><img className='projectLinks_img' alt="none" src={GrayGit}  /></a>
+                  <button onClick={descriptionOpen2} id='myBtn' className='project_a'><img alt="none" className='projectLinks_img' src={ ThreeDot } /></button>
                   
                   <div id="myModal2" class="modal">
                   <div class="modal-content">
@@ -125,11 +130,11 @@ function App() {
           </div>
           <div className='project' id='project3'>
             <div className='project_box'>
-              <img className='project_img'  src={Mario}/>
+              <img className='project_img' alt="none" src={Mario}/>
               <h4>Mario Clone</h4>
               <div className='project_links'>
-                <a className='project_a' href="https://github.com/Skye967/Projects/tree/branching/MarioProject"><img className='projectLinks_img' src={GrayGit} /></a>
-                  <a onClick={descriptionOpen3} id='myBtn' className='project_a'><img className='projectLinks_img' src={ ThreeDot } /></a>
+                <a className='project_a' href="https://github.com/Skye967/Projects/tree/branching/MarioProject"><img className='projectLinks_img' alt="none" src={GrayGit} /></a>
+                  <button onClick={descriptionOpen3} id='myBtn' className='project_a'><img alt="none" className='projectLinks_img' src={ ThreeDot } /></button>
                   
                   <div id="myModal3" class="modal">
                   <div class="modal-content">
@@ -156,10 +161,10 @@ function App() {
               </div>
               <div className="contact_form">
                 <address>
-                  <a href="mailto:skye.grossman@gmail.com"><img src={ELogo} height="50px"/>Email</a>
+                  <a href="mailto:skye.grossman@gmail.com"><img alt="none" src={ELogo} height="50px"/>Email</a>
                 </address>
-                <a href="https://www.linkedin.com/in/skye-grossman-62039521b/"><img src={LLogo} height="50px"/>Linkedin</a>
-                <a className="github" href="https://github.com/Skye967"><img src={GLogo} height="46px"/>Github</a>
+                <a href="https://www.linkedin.com/in/skye-grossman-62039521b/"><img alt="none" src={LLogo} height="50px"/>Linkedin</a>
+                <a className="github" href="https://github.com/Skye967"><img alt="none" src={GLogo} height="46px"/>Github</a>
               </div>
             </div>
           </div>
