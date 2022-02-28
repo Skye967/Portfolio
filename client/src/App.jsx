@@ -15,11 +15,9 @@ import { descriptionClose1, descriptionOpen1, descriptionClose2, descriptionOpen
 
 
 function App() {
+  
   return (
-    <html>
-      <head>
-        
-      </head>
+    
     <div id="body" >
       <nav className="navbar">
         <div className="navbar_block">
@@ -89,9 +87,9 @@ function App() {
 
                   <a className='project_a' href="http://13.58.255.104"><img alt="none" style={ { width: "40%"} } className='projectLinks_img' src={safariIcon} /></a>
                   
-                <div id="myModal1" class="modal">
-                  <div class="modal-content">
-                    <button onClick={descriptionClose1} class="close">&times;</button>
+                <div id="myModal1" className="modal">
+                  <div className="modal-content">
+                    <button onClick={descriptionClose1} className="close">&times;</button>
                     <ul>
                       <li>Created this website using Python, Flask, and MySql.</li>
                       <li>Utilized HTML to add an embeded video and an article on common cooking mistakes and a link to the registration page</li>
@@ -113,9 +111,9 @@ function App() {
                 <a className='project_a' href="https://github.com/Skye967/Projects/tree/branching/ProAdviceProject"><img className='projectLinks_img' alt="none" src={GrayGit}  /></a>
                   <button onClick={descriptionOpen2} id='myBtn' className='project_a'><img alt="none" className='projectLinks_img' src={ ThreeDot } /></button>
                   
-                  <div id="myModal2" class="modal">
-                  <div class="modal-content">
-                    <button onClick={descriptionClose2} class="close">&times;</button>
+                  <div id="myModal2" className="modal">
+                  <div className="modal-content">
+                    <button onClick={descriptionClose2} className="close">&times;</button>
                     <ul>
                     <li>Created this App with Spring Tool Suite, Java, and MySql</li>
                     <li>One to many relationships between Users and Questions, Answers, and Comments. Many to many relationship between Users and Professions. One to many relationships between Questions and Answes, and Comments. Many to many relationship between questions and tags. One to many relationship between Answers and Comments</li>
@@ -136,9 +134,9 @@ function App() {
                 <a className='project_a' href="https://github.com/Skye967/Projects/tree/branching/MarioProject"><img className='projectLinks_img' alt="none" src={GrayGit} /></a>
                   <button onClick={descriptionOpen3} id='myBtn' className='project_a'><img alt="none" className='projectLinks_img' src={ ThreeDot } /></button>
                   
-                  <div id="myModal3" class="modal">
-                  <div class="modal-content">
-                    <button onClick={descriptionClose3} class="close">&times;</button>
+                  <div id="myModal3" className="modal">
+                  <div className="modal-content">
+                    <button onClick={descriptionClose3} className="close">&times;</button>
                     <ul>
                       <li>Created the background by using javascript to create image tiles from an image board by making a class that takes in pixels as coordinates then setting the height and width. Using a JSON file to take the image and set how many image tiles long and wide then a function to draw an image of the whole background.</li>
                       <li>Mario was made by attaching a javascript class to an image of Mario that has different functions to control jumping and gravity. And the image of mario is redrawn to the new coordinates as the jump progresses.</li>
@@ -170,7 +168,6 @@ function App() {
           </div>
       </div>
       
-    </html>
   );
 }
 export default App;

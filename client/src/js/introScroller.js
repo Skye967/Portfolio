@@ -1,16 +1,18 @@
 
 
-export const portfolioDisplay = function () {
+export const portfolioDisplay = window.onload =  function () {
     const divRemove = document.querySelector( '.code' );
     const enlargeBio = document.querySelector( '.bio_content' );
     const changeProject = document.querySelector( '.projects' );
     const menuButton = document.querySelector( ".menu_button" );
     const navbar = document.querySelector( ".navbar" );
+    const introBackground = document.querySelector(".intro")
     const viewport = window.innerWidth;
     if ( divRemove == null ) {
         return;
     }
     if ( viewport < 500 ) {
+        introBackground.style.backgroundAttachment = "scroll";
         divRemove.style.display = "none";
         enlargeBio.style.fontSize = "x-large";
         changeProject.style.flexDirection = "Column";
@@ -50,15 +52,24 @@ export const projectDisplay = window.onresize = function () {
         project2.style.width = "300px";
         project3.style.width = "300px";
     }
-
 };
+
 
 export const scroller = window.addEventListener( 'scroll', function () {
     const introScroll = document.querySelector( '.introImage' );
+    const introBackground = document.querySelector(".intro")
     const valueA = window.scrollY;
     const valueB = window.scrollY / 2;
-    introScroll.style.transform = "translate3d(" + valueB + "px, " + valueA + "px, 0)";
+    const viewport = window.innerWidth;
+    if(viewport < 700){
+        introBackground.style.backgroundAttachment = "scroll";
+        return viewport
+    } else if ( viewport > 700){
+        introScroll.style.transform = "translate3d(" + valueB + "px, " + valueA + "px, 0)";
+    }
+    
 } );
+
 
 export const bioScroller = window.addEventListener( 'scroll', function () {
     const bioScroll = document.querySelector( '.bio_content' );
@@ -67,16 +78,16 @@ export const bioScroller = window.addEventListener( 'scroll', function () {
     const value2 = window.scrollY;
     let num = 0;
     let opaNum = 0;
-    if ( intViewportHeight > 1700 ) {
+    if ( intViewportHeight > 1700 && intViewportWidth > 700) {
         bioScroll.style.transform = "translate3d(0, 0, 0)";
         bioScroll.style.opacity = 1;
     }
-    if ( intViewportWidth < 1040 && intViewportHeight < 1700 && value2 < 950 ) {
+    if ( intViewportWidth < 1040 && intViewportHeight < 1700 && value2 < 950 && intViewportWidth > 700 ) {
         num = 950 - value2;
         bioScroll.style.transform = "translate3d(-" + num + "px, 0, 0)";
         opaNum = ( value2 - 650 ) / 200;
         bioScroll.style.opacity = opaNum;
-    } else if ( value2 > 950 && intViewportWidth < 1040 ) {
+    } else if ( value2 > 950 && intViewportWidth < 1040 && intViewportWidth > 700) {
         bioScroll.style.transform = "translate3d(0, 0, 0)";
         bioScroll.style.opacity = 1;
     }
@@ -97,24 +108,24 @@ export const projectScroller = window.addEventListener( 'scroll', function () {
     const intViewportWidth = window.innerWidth;
     const intViewportHeight = window.innerHeight;
     let opaNum2 = 0;
-    if ( value3 < 2300 && intViewportHeight < 800 && intViewportWidth > 970 ) {
+    if ( value3 < 2300 && intViewportHeight < 800 && intViewportWidth > 970 && intViewportWidth > 700 ) {
         opaNum2 = ( value3 - 1900 ) / 400;
         projectScroll.style.opacity = opaNum2;
         console.log( value3 );
     }
-    if ( value3 < 2700 && intViewportHeight < 800 && intViewportWidth < 970 ) {
+    if ( value3 < 2700 && intViewportHeight < 800 && intViewportWidth < 970 && intViewportWidth > 700 ) {
         opaNum2 = ( value3 - 2300 ) / 400;
         projectScroll.style.opacity = opaNum2;
     }
-    if ( value3 < 2200 && intViewportHeight > 800 && intViewportWidth < 970 && intViewportWidth > 500 ) {
+    if ( value3 < 2200 && intViewportHeight > 800 && intViewportWidth < 970 && intViewportWidth > 700 ) {
         opaNum2 = ( value3 - 1800 ) / 400;
         projectScroll.style.opacity = opaNum2;
     }
-    if ( value3 < 2500 && intViewportHeight > 800 && intViewportWidth < 500 ) {
-        opaNum2 = ( value3 - 2100 ) / 400;
-        projectScroll.style.opacity = opaNum2;
-    }
-    else if ( value3 > 2500 && intViewportWidth < 500 ) {
+    // if ( value3 < 2500 && intViewportHeight > 800 && intViewportWidth < 500 ) {
+    //     opaNum2 = ( value3 - 2100 ) / 400;
+    //     projectScroll.style.opacity = opaNum2;
+    // }
+    else if ( value3 > 2500 && intViewportWidth < 700 ) {
         projectScroll.style.opacity = 1;
     }
 } );
